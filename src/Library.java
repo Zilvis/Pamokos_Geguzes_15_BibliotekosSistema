@@ -29,12 +29,6 @@ public class Library {
     }
 
     public Book findBook(String title){
-        int bookId = 0;
-        for (int i = 0; i < bookList.length; i++){
-            if (bookList[i].getTitle().equalsIgnoreCase(title)){
-                bookId = i;
-            }
-        }
 
         for (Book b : bookList){
             if (b.getTitle().equalsIgnoreCase(title)){

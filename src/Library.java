@@ -7,7 +7,6 @@ public class Library {
         this.bookList = bookList;
     }
 
-    // Prideti knyga i sarasa bet pries tai reikia patikrinti saraso ilgi ir su +1 nustatyti sekancia vieta
     public Book[] addBook(Book book){
         Book[] naujasMasyvas = Arrays.copyOf(bookList, bookList.length + 1);
         naujasMasyvas[bookList.length] = book;
